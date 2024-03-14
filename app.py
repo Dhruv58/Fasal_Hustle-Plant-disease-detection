@@ -38,7 +38,7 @@ labels={'Apple___Apple_scab': 0, 'Apple___Black_rot': 1,
 
 
 def preprocess_image(file):
-  path = 'F:/project/random_tests/'
+  path = 'D:/minor_project/random_tests/'
   img = image.load_img(path + file, target_size=(224,224))
   img_array = image.img_to_array(img)
   img_array_expanded_dims = np.expand_dims(img_array, axis=0)
